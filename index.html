@@ -9,9 +9,54 @@
     <meta property="og:url" content="https://maps.app.goo.gl/4vUyp8GgJZgEXNLW9">
     <meta property="og:type" content="website">
     <meta http-equiv="refresh" content="0;url=https://maps.app.goo.gl/4vUyp8GgJZgEXNLW9">
-    <title>Custom Location Preview</title>
+    <title>Baby shower de Abby</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+            color: #374151;
+            text-align: center;
+        }
+        .container {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #cbd5e1;
+            border-top: 4px solid #3b82f6;
+            border-radius: 50%;
+            margin: 20px auto;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
 <body>
-    <p>Redirecting to Google Maps...</p>
+    <div class="container">
+        <h1>Redirigiendo...</h1>
+        <div class="spinner"></div>
+        <p>Si no eres redirigido a Google Maps, <a href="https://goo.gl/maps/examplelocation">click aquí</a>.</p>
+    </div>
 </body>
 </html>
